@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner a=new Scanner(System.in);
+		System.out.println("Enter minutes   :");
+		int min=a.nextInt();
+		int yr,dy,x;
+		yr=min/525600;
+		x=min%525600;
+		dy=x/1440;
+		System.out.println(min+" minutes is equal to "+yr+" years and "+dy+" days");
+	}
+}
